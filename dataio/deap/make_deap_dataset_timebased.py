@@ -321,8 +321,8 @@ def dwt_alpha(data, wavelet='db4'):
 
 if __name__ == "__main__":
     num_subjects = 32
-    target_seconds = 3.0
-    step = 1.5
+    target_seconds = 1.0
+    step = 0.5
     trim_samples = 384 # 384
     input_dir = r'/data/deap/data_preprocessed_python'
 
