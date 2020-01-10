@@ -10,7 +10,7 @@ import shutil
 
 from models import base_models_mtl
 from utils.utilitary_mtl import fmeasure
-from utils.generate_mtl_head import generate_mtl_head, generate_sparse_mtl_head
+from models.generate_mtl_head import generate_mtl_head, generate_sparse_mtl_head
 
 from dataio.opportunity.opportunity_adapter import opportunity_reader
 from utils.opportunity import opportunity_select_channels_tf, opportunity_num_classes_for_label_channel
@@ -22,7 +22,6 @@ from utils.deap import select_channels_deap, load_deap_data
 from utils.f_scores import F2Score
 from evaluation import Evaluator, EvaluationCallback
 from utils.app_hps import parse_args
-from utils.profile import ProfileCallback
 from utils.misc import Unbuffered, print_arguments
 
 import shared
@@ -241,8 +240,6 @@ def train_mtl_model(model,
     eval_callback = EvaluationCallback(
         val_data, label_names, num_classes, eval_dir)
 
-    profile_callback = ProfileCallback()
-
     check_name = path.join(checkpath, f'{args.model}_{args.tag}.hdf5')
 
     check_callback = tf.keras.callbacks.ModelCheckpoint(check_name,
@@ -293,7 +290,6 @@ def train_mtl_model(model,
         callbacks = [
             tb_callback,
             check_callback,
-            profile_callback,
             eval_callback
         ]
 

@@ -695,7 +695,7 @@ if __name__ == '__main__':
 
     model.summary()
 
-    outpath = "/home/yoshi/cs_normconv3.json"
+    outpath = "~/cs_normconv3.json"
     with open(outpath, "w") as jf:
         model_json = model.to_json(indent=2)
         jf.write(model_json)
