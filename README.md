@@ -8,7 +8,7 @@ Networks](https://arxiv.org/abs/1604.03539)) on two time-series datasets with
 sensor-based data
 ([OPPORTUNITY for Human Activity
 Recognition](https://archive.ics.uci.edu/ml/datasets/opportunity+activity+recognition) 
-and [DEAP for Emotion Recognition from EEG](https://www.eecs.qmul.ac.uk/mmv/datasets/deap/).
+and [DEAP for Emotion Recognition from EEG](https://www.eecs.qmul.ac.uk/mmv/datasets/deap/)).
 
 For a gentle introduction into Multi-Task Learning, I recommend this [excellent
 paper by S. Ruder](https://arxiv.org/abs/1706.05098).
@@ -33,3 +33,4 @@ Here is the abstract from my thesis:
 > to SPS works for time-series. To aid further research in this field, our source code is
 > made public. 
 
+The thesis is available [in this repository](https://github.com/LtSurgekopf/TimeSeriesMTL/raw/master/thesis.pdf).
