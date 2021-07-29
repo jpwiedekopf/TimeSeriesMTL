@@ -1,4 +1,7 @@
 # TimeSeriesMTL
+
+[![DOI](https://zenodo.org/badge/224407600.svg)](https://zenodo.org/badge/latestdoi/224407600)
+
 Code for my Master's Thesis at the Institute of Medical Informatics, Universität zu Lübeck.
 
 I carried out studies on Multi-Task Learning using three approaches (Hard
